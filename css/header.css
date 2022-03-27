@@ -6,5 +6,118 @@ header{
 
 header .container{
     height: 100%;
-    justify-content: space-between;
+}
+
+header .container .logo{
+    /* margin-right: 170px; */
+    margin-right: 10%;
+}
+
+header .container .search{
+    background: #212121;
+    max-width: 747px;
+    width: 100%;
+    border-radius: 2.82px;
+    border: 1px solid #000000;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+header .container .search .lupa{
+    margin: 0 0 0 10px;
+}
+
+header .container .search input[type= text]{
+    color: #fff;
+    font-size: 14.58px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 12px;
+}
+header .container .search input[type= text]::placeholder{
+    color: #7B7B7B;
+}
+
+header .container .search input[type= submit]{
+    background: #666666;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12.23px;
+    height: 100%;
+    max-width: 84.67px;
+    width: 100%;
+    margin-left: auto;
+    cursor: pointer;
+}
+header .container .search input[type= submit]:hover{
+    background: #525151;
+}
+
+header .container .profile{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header .container .profile .profile-icon{
+    margin-right: 6px;
+}
+
+header .container .profile p{
+    color: #fff;
+    font-size: 13.46px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+header .container .tickets{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+header .container .tickets .count{
+    color: #fff;
+    font-size: 13.46px;
+    font-weight: 700;
+    margin-left: 3px;
+    margin-top: -22px;
+}
+
+
+
+
+@media (max-width: 768px){
+    header .container .profile p{
+        display: none;
+    }
+    header .container .tickets{
+        margin-left: 10px;
+    }
+    header .container .logo{
+        margin-right: 15px;
+    }
+}
+@media (max-width: 425px){
+    header .container .search{
+        margin-left: -20px;
+    }
+    header .container .search .lupa{
+        display: none;
+    }
+    header .container .search input[type= submit]{
+        font-size: 10px;
+        max-width: 55.67px;
+    }
+    header .container .logo{
+        transform: scale(0.7);
+        margin-left: -20px;
+    }
 }

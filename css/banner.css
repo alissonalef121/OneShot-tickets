@@ -1,0 +1,28 @@
+.banner_wrapper{
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+.slick-arrow{
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    background-image: url(../img/banner/slick-arrow.svg);
+    width: 46px;
+    color: transparent;
+    height: 46px;
+    cursor: pointer;
+    top: 45%;
+    z-index: 1;
+}
+
+.slick-prev{
+    left: 55px;
+}
+.slick-next{
+    right: 55px;
+    transform: rotate(180deg);
+}
