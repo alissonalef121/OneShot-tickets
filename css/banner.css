@@ -11,18 +11,44 @@
     outline: none;
     position: absolute;
     background-image: url(../img/banner/slick-arrow.svg);
-    width: 46px;
+    background-size: cover;
+    width: 2%;
+    height: 11%;
     color: transparent;
-    height: 46px;
     cursor: pointer;
     top: 45%;
     z-index: 1;
 }
 
 .slick-prev{
-    left: 55px;
+    left: 65px;
 }
 .slick-next{
-    right: 55px;
+    right: 65px;
     transform: rotate(180deg);
+}
+
+.slick-dots{
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    display: flex;
+}
+.slick-dots li{
+    width: 8.12px;
+    height: 8.12px;
+    border-radius: 50%;
+    background: #6C6C6C;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+.slick-dots li button{
+    display: none;
+}
+.slick-dots li:not(:last-child){
+    margin-right: 10px;
+}
+.slick-dots .slick-active{
+    background: #F5F5F5;
 }
